@@ -5,6 +5,7 @@ services:
     ports:
       - '3000:3000'
     volumes:
-      - ./src:/app/src
+      - ./src:/frontend/src
+      - /frontend/node_modules
     stdin_open: true
     tty: true
