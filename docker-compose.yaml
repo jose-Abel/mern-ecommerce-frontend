@@ -9,3 +9,11 @@ services:
       - /frontend/node_modules
     stdin_open: true
     tty: true
+    networks:
+      - mern-ecommerce
+
+networks:
+  mern-ecommerce:
+    driver: bridge
+    external: false
+    name: mern-ecommerce
